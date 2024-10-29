@@ -14,9 +14,8 @@ class CalcTests(SimpleTestCase):
         """Test subtracting numbers together."""
         res = calc.subtract(10, 15)
         self.assertEqual(res, 5)
-    
+
     def test_printing_name(self):
         """Test printing name with greetings."""
         res = calc.print_name('Dilip')
         self.assertEqual(res, 'Hello Dilip')
-        

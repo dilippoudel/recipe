@@ -10,6 +10,7 @@ def subtract(x, y):
     """Subtract x from y and return result."""
     return y - x
 
+
 def print_name(name):
     """Print name with greetings."""
     return f'Hello {name}'
