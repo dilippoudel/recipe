@@ -7,7 +7,8 @@ from django.contrib.auth.models import (
     BaseUserManager,
     PermissionsMixin
 )
-"""Note: AbstractBase user contains the functionality for auth system to user."""
+"""Note: AbstractBase user contains the functionality
+for auth system to user."""
 # https://docs.djangoproject.com/en/3.2/topics/auth/customizing/#auth-custom-user
 
 
@@ -27,7 +28,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     name = models.CharField(max_length=255)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
-    
+
     objects = UserManager()
-    
+
     USERNAME_FIELD = 'email'

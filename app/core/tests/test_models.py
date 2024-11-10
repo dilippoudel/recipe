@@ -1,5 +1,5 @@
 """Test for models."""
-# Testcase is the base class imported from django.test model \ 
+# Testcase is the base class imported from django.test model \
 # which is useable when the test comes with database integrations
 from django.test import TestCase
 # https://docs.djangoproject.com/en/3.2/topics/auth/customizing/#django.contrib.auth.get_user_model
@@ -20,8 +20,7 @@ class ModelsTestUser(TestCase):
         )
         self.assertEqual(user.email, email)
         self.assertTrue(user.check_password(password))
-    
-    
+
     def test_new_user_email_normalized(self):
         """Test email is normalized for new users."""
         sample_emails = [
